@@ -23,6 +23,7 @@ scikit-learn==0.21.3
 scipy==1.3.1
 six==1.12.0
 spacy==2.2.1
+# Note that in this project en-core-web-md model is used
 srsly==0.1.0
 thinc==7.1.1
 tqdm==4.36.1
