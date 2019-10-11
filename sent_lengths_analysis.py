@@ -75,7 +75,7 @@ def histo_overlay( numpy_array_bestsellers, numpy_array_evergreens, file_name=No
         figure = pyplot.figure()
     ax_bestsellers_chars = pyplot.subplot( 1, 2, 1 )
     ax_bestsellers_chars.set_title( "Characters" )
-    pyplot.hist( numpy_array_evergreens[0:,0], 25, alpha=0.7, label="evergreens" )
+    pyplot.hist( numpy_array_evergreens[0:,0], 25, alpha=0.7, label="Evergreens" )
     pyplot.hist( numpy_array_bestsellers[0:,0], 25, alpha=0.8, label="Bestsellers" )
     pyplot.legend()
     ax_bestsellers_tokens = pyplot.subplot( 1, 2, 2, sharey=ax_bestsellers_chars )
@@ -112,7 +112,7 @@ means_ever, r2 = report_std( "evergreens", evergreens_sentences_lengths )
 print( "\nstdev-of-stdev ratio (evergreens/bestsellers): {:.2f}".format( r2/r1 ) )
 
 # histo( means_best, means_ever, "project-reporting/sentence_length_analysis.png" )
-histo_overlay( means_best, means_ever, "project-reporting/fig_002_20191004_1503.png" )
+histo_overlay( means_best, means_ever, "project-reporting/fig_002_20191011_1120.png" )
 
 # Wat opvalt is dat niet zozeer de gemiddelde zinslengte afwijkt,
 # maar vooral de *variantie*. Bij evergreens is de variantie
