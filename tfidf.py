@@ -33,7 +33,7 @@ with tqdm( total=len(file_names) ) as pbar:
 vectorizer = TfidfVectorizer()
 tfidf = vectorizer.fit_transform( docs )
 print( tfidf.shape )
-# with open( os.path.join( utils.TFIDF_PATH, "20190919_2357/tfidf_20191001_1624.pickle" ), "wb" ) as file:
-#     pickle.dump( tfidf, file )
-# with open( os.path.join( utils.TFIDF_PATH, "20190919_2357/vect_20191001_1624.pickle" ), "wb" ) as file:
-#     pickle.dump( vectorizer, file )
+with open( os.path.join( utils.TFIDF_PATH, "20190919_2357/tfidf_20191001_1624.pickle" ), "wb" ) as file:
+    pickle.dump( tfidf, file )
+with open( os.path.join( utils.TFIDF_PATH, "20190919_2357/vect_20191001_1624.pickle" ), "wb" ) as file:
+    pickle.dump( vectorizer, file )

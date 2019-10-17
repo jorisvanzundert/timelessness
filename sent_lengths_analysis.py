@@ -113,10 +113,3 @@ print( "\nstdev-of-stdev ratio (evergreens/bestsellers): {:.2f}".format( r2/r1 )
 
 # histo( means_best, means_ever, "project-reporting/sentence_length_analysis.png" )
 histo_overlay( means_best, means_ever, "project-reporting/fig_002_20191011_1120.png" )
-
-# Wat opvalt is dat niet zozeer de gemiddelde zinslengte afwijkt,
-# maar vooral de *variantie*. Bij evergreens is de variantie
-# (welke low count cut off je ook kiest) altijd ongeveer dubbel zo groot.
-#
-# Mogelijke andere metingen:
-#   * leave out highest and lowest values

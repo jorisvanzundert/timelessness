@@ -37,28 +37,3 @@ fit = umap.UMAP()
 u = fit.fit_transform(X)
 with open( os.path.join( utils.TFIDF_PATH, "20190919_2357/umap_20191001_1903.pickle" ), "wb" ) as file:
     pickle.dump( u, file )
-
-
-#
-# modelkmeans = KMeans(n_clusters=3, init='k-means++', max_iter=200, n_init=100)
-# labels = modelkmeans.fit_predict(tfidf)
-# print( tfidf.shape )
-# print( labels.shape  )
-#
-# selector = VarianceThreshold()
-#
-# def plot_graph(Y):
-#     plt.hist( Y.variances_, color = 'orange', bins = 100 )
-#     plt.xlim(0,0.003)
-#     plt.show()
-#
-# # Add labels
-# plt.title('Histogram of Arrival Delays')
-# plt.xlabel('Delay (min)')
-# plt.ylabel('Flights')
-#
-# XX = selector.fit(X)
-# p = Process( target=plot_graph, args=([XX]))
-# p.start()
-#
-# print( selector.variances_ )
