@@ -28,5 +28,5 @@ srsly==0.1.0
 thinc==7.1.1
 tqdm==4.36.1
 umap-learn==0.3.10
-urllib3==1.25.6
+urllib3==1.26.5
 wasabi==0.2.2
